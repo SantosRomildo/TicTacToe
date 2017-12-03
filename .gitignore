@@ -73,3 +73,19 @@ Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+
+*/Build
+*/Binaries
+*/DerivedDataCache
+*/Intermediate
+*/Saved
+
+
+######################
+# VS Generated Files #
+######################
+*.VC.db
+*.ipch
+
+*.xcodeproj
+*.xcworkspace
