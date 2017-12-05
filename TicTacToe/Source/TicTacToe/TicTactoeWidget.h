@@ -20,10 +20,37 @@ class TICTACTOE_API UTicTactoeWidget : public UUserWidget
 	
 public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Player Turn")
-	FString PlayerTurn = "";
+	FString PlayerTurn = "x Turn";
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Winner")
 	FString WinnerText = "";
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "BoardText1")
+		FString BoardText1 = "";
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "BoardText2")
+		FString BoardText2 = "";
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "BoardText3")
+		FString BoardText3 = "";
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "BoardText4")
+		FString BoardText4 = "";
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "BoardText5")
+		FString BoardText5 = "";
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "BoardText6")
+		FString BoardText6 = "";
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "BoardText7")
+		FString BoardText7 = "";
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "BoardText8")
+		FString BoardText8 = "";
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "BoardText9")
+		FString BoardText9 = "";
 	
 	UPROPERTY()
 	class ATicTacToeActor *ticTacToe;
@@ -48,5 +75,5 @@ private:
 	UFUNCTION()
 	void Board9();
 
-	
+	void UpdateTextBoard();
 };
