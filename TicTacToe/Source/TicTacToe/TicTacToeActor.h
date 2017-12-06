@@ -38,7 +38,8 @@ public:
 	bool IsCellEmpty(int32 choiceX, int32 choiceY);	
 	FString ReturnCellValue(int32 choiceX, int32 choiceY);
 	FString GetWinnerName();
-	
+	bool IsMovesLeft();
+
 
 	
 	

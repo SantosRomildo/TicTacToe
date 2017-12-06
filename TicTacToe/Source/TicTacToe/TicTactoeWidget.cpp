@@ -144,15 +144,13 @@ void UTicTactoeWidget::UpdateTextBoard()
 	
 
 	if (ticTacToe->IsGameEnd()) {
-		if (ticTacToe->GetWinnerName() == "d") {
-			WinnerText = "Draw";
+		if (ticTacToe->GetWinnerName() == "o") {
+			WinnerText = "o Win";
 		}
 		else if (ticTacToe->GetWinnerName() == "x") {
 			WinnerText = "x Win";
 		}
-		else {
-			WinnerText = "o Win";
-		}
+		
 		PlayerTurn = "";
 	}
 	else {
@@ -163,7 +161,10 @@ void UTicTactoeWidget::UpdateTextBoard()
 			PlayerTurn = "o Turn";
 		}
 	}
-
+		if(ticTacToe->IsMovesLeft() == false) {
+			WinnerText = "Draw";
+			PlayerTurn = "";
+		}
 
 }
 

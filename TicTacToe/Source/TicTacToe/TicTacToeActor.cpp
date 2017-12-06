@@ -160,5 +160,18 @@ bool ATicTacToeActor::IsGameEnd()
 	return false;
 }
 
+bool ATicTacToeActor::IsMovesLeft()
+{
+	for (int i = 0; i < 3; i++) {
+		for (int j = 0; j < 3; j++) {
+			if (hashBoard[i][j] == empty) {
+				return true;
+			}
+		}
+	}
+	return false;
+}
+
+
 
 

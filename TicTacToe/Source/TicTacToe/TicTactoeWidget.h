@@ -25,32 +25,34 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Winner")
 	FString WinnerText = "";
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "BoardText1")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "BoardText")
 		FString BoardText1 = "";
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "BoardText2")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "BoardText")
 		FString BoardText2 = "";
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "BoardText3")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "BoardText")
 		FString BoardText3 = "";
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "BoardText4")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "BoardText")
 		FString BoardText4 = "";
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "BoardText5")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "BoardText")
 		FString BoardText5 = "";
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "BoardText6")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "BoardText")
 		FString BoardText6 = "";
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "BoardText7")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "BoardText")
 		FString BoardText7 = "";
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "BoardText8")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "BoardText")
 		FString BoardText8 = "";
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "BoardText9")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "BoardText")
 		FString BoardText9 = "";
+
+
 	
 	UPROPERTY()
 	class ATicTacToeActor *ticTacToe;
